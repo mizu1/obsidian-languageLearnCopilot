@@ -3,7 +3,7 @@
   "name": "Language Learn",
   "version": "1.0.0",
   "minAppVersion": "1.4.0",
-  "description": "AI-powered language learning with word analysis, relation graphs, hover tooltips, and structured note-taking.",
+  "description": "AI language learning plugin: word analysis, hover preview, note-based conversation, structured notes and vocabulary relation graph. Supports adding custom languages.",
   "author": "mizu1",
   "authorUrl": "",
   "isDesktopOnly": false
