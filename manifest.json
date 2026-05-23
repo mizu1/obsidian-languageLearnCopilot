@@ -1,7 +1,7 @@
 {
   "id": "language-learn",
   "name": "Language Learn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minAppVersion": "1.4.0",
   "description": "AI language learning plugin: word analysis, hover preview, note-based conversation, structured notes and vocabulary relation graph. Supports adding custom languages.",
   "author": "mizu1",
