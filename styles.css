@@ -1,0 +1,520 @@
+/* ── Vocabulary Highlight ── */
+
+.lang-learn-highlight {
+	background: rgba(var(--color-accent-rgb, 100, 140, 255), 0.15);
+	border-bottom: 1.5px dashed var(--interactive-accent);
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 0 1px;
+	transition: background 0.15s;
+}
+
+.lang-learn-highlight:hover {
+	background: rgba(var(--color-accent-rgb, 100, 140, 255), 0.28);
+}
+
+/* ── Selection Action Button ── */
+
+.lang-learn-selection-btn {
+	position: fixed;
+	z-index: 999;
+	padding: 6px 14px;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--text-on-accent);
+	background: var(--interactive-accent);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(4px);
+	transition: opacity 0.15s ease, transform 0.15s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	pointer-events: auto;
+	user-select: none;
+}
+
+.lang-learn-selection-btn-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.lang-learn-selection-btn:hover {
+	filter: brightness(1.1);
+}
+
+.lang-learn-selection-btn-loading {
+	opacity: 0.7;
+	cursor: wait;
+}
+
+/* ── Hover Popup ── */
+
+.lang-learn-hover-popup {
+	position: fixed;
+	z-index: 1000;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+	padding: 12px 16px;
+	max-width: 380px;
+	min-width: 260px;
+	font-size: 13px;
+	line-height: 1.5;
+	pointer-events: auto;
+	animation: lang-learn-fadein 0.15s ease-out;
+}
+
+@keyframes lang-learn-fadein {
+	from { opacity: 0; transform: translateY(4px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+.lang-learn-hover-header {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	margin-bottom: 8px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.lang-learn-hover-word {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--text-normal);
+}
+
+.lang-learn-hover-type {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	background: var(--background-modifier-hover);
+	padding: 2px 6px;
+	border-radius: 4px;
+	letter-spacing: 0.5px;
+}
+
+.lang-learn-hover-section {
+	margin-bottom: 8px;
+}
+
+.lang-learn-hover-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 2px;
+}
+
+.lang-learn-hover-label-collapsible {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 2px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.lang-learn-hover-label-collapsible:hover {
+	color: var(--text-accent);
+}
+
+.lang-learn-hover-text {
+	color: var(--text-normal);
+}
+
+.lang-learn-hover-collapsed {
+	display: none;
+}
+
+.lang-learn-hover-sentence {
+	font-style: italic;
+	color: var(--text-accent);
+	margin-bottom: 2px;
+}
+
+.lang-learn-hover-analysis {
+	color: var(--text-muted);
+	font-size: 12px;
+}
+
+.lang-learn-hover-buttons {
+	display: flex;
+	gap: 6px;
+	margin-top: 10px;
+	padding-top: 8px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+/* ── Shared Buttons ── */
+
+.lang-learn-btn {
+	padding: 5px 12px;
+	font-size: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	background: var(--background-secondary);
+	color: var(--text-normal);
+	cursor: pointer;
+	transition: background 0.1s;
+	flex-shrink: 0;
+}
+
+.lang-learn-btn:hover {
+	background: var(--background-modifier-hover);
+}
+
+.lang-learn-btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.lang-learn-btn-primary {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+.lang-learn-btn-primary:hover {
+	background: var(--interactive-accent-hover);
+}
+
+.lang-learn-btn-secondary {
+	/* default style */
+}
+
+/* ── Session bar ── */
+
+.lang-learn-panel-session-bar {
+	display: flex;
+	gap: 6px;
+	padding: 6px 10px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	flex-shrink: 0;
+}
+
+.lang-learn-session-select {
+	flex: 1;
+	padding: 3px 6px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: 12px;
+	outline: none;
+}
+
+.lang-learn-btn-small {
+	padding: 3px 8px;
+	font-size: 11px;
+}
+
+.lang-learn-session-sep {
+	width: 1px;
+	background: var(--background-modifier-border);
+	margin: 0 4px;
+	align-self: stretch;
+}
+
+/* ── AI Panel ── */
+
+.lang-learn-panel {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0;
+}
+
+.lang-learn-panel-chat {
+	flex: 1;
+	overflow-y: auto;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.lang-learn-panel-progress {
+	padding: 8px 12px;
+	border-top: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+}
+
+.lang-learn-panel-progress-stage {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	margin-bottom: 4px;
+}
+
+.lang-learn-panel-progress-bar {
+	height: 4px;
+	background: var(--background-modifier-border);
+	border-radius: 2px;
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+
+.lang-learn-panel-progress-fill {
+	height: 100%;
+	background: var(--interactive-accent);
+	border-radius: 2px;
+	transition: width 0.3s ease;
+}
+
+.lang-learn-panel-progress-text {
+	font-size: 10px;
+	color: var(--text-faint);
+}
+
+.lang-learn-panel-progress-msg {
+	font-size: 12px;
+	color: var(--text-muted);
+	margin-top: 4px;
+}
+
+.lang-learn-panel-welcome {
+	text-align: center;
+	padding: 24px 16px;
+	color: var(--text-muted);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.lang-learn-panel-welcome-sub {
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 6px;
+	color: var(--text-faint);
+}
+
+.lang-learn-panel-message {
+	padding: 8px 12px;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 1.5;
+	max-width: 90%;
+	word-wrap: break-word;
+}
+
+.lang-learn-panel-user {
+	align-self: flex-end;
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.lang-learn-panel-assistant {
+	align-self: flex-start;
+	background: var(--background-secondary);
+	color: var(--text-normal);
+}
+
+.lang-learn-panel-error {
+	align-self: flex-start;
+	background: var(--background-modifier-error);
+	color: var(--text-error);
+	font-size: 12px;
+}
+
+.lang-learn-panel-warning {
+	font-size: 11px;
+	color: var(--text-warning);
+	margin-top: 4px;
+}
+
+.lang-learn-panel-confirm {
+	padding: 10px 12px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	font-size: 13px;
+}
+
+.lang-learn-panel-confirm-btns {
+	display: flex;
+	gap: 6px;
+	margin-top: 8px;
+}
+
+.lang-learn-panel-success {
+	font-size: 12px;
+	color: var(--text-success);
+	margin-top: 6px;
+}
+
+.lang-learn-panel-input-row {
+	display: flex;
+	gap: 6px;
+	padding: 8px 12px;
+	border-top: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+}
+
+.lang-learn-panel-input {
+	flex: 1;
+	padding: 6px 10px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: 13px;
+	outline: none;
+}
+
+.lang-learn-panel-input:focus {
+	border-color: var(--interactive-accent);
+}
+
+.lang-learn-panel-input:disabled {
+	opacity: 0.6;
+}
+
+/* ── Note Popup (full note content) ── */
+
+.lang-learn-note-popup {
+	position: fixed;
+	z-index: 1001;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+	max-width: 420px;
+	min-width: 300px;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	line-height: 1.5;
+	animation: lang-learn-fadein 0.15s ease-out;
+}
+
+.lang-learn-note-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 14px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	flex-shrink: 0;
+}
+
+.lang-learn-note-title-group {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.lang-learn-note-word {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--text-normal);
+}
+
+.lang-learn-note-type {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	background: var(--background-modifier-hover);
+	padding: 2px 6px;
+	border-radius: 4px;
+}
+
+.lang-learn-note-date {
+	font-size: 11px;
+	color: var(--text-faint);
+}
+
+.lang-learn-note-speaker {
+	cursor: pointer;
+	font-size: 15px;
+	opacity: 0.6;
+	transition: opacity 0.15s;
+}
+
+.lang-learn-note-speaker:hover {
+	opacity: 1;
+}
+
+.lang-learn-note-close {
+	cursor: pointer;
+	font-size: 16px;
+	color: var(--text-muted);
+	padding: 2px 6px;
+	border-radius: 4px;
+	line-height: 1;
+}
+
+.lang-learn-note-close:hover {
+	color: var(--text-normal);
+	background: var(--background-modifier-hover);
+}
+
+.lang-learn-note-body {
+	padding: 10px 14px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.lang-learn-note-section {
+	margin-bottom: 10px;
+}
+
+.lang-learn-note-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 3px;
+}
+
+.lang-learn-note-label-collapsible {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 3px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.lang-learn-note-label-collapsible:hover {
+	color: var(--text-accent);
+}
+
+.lang-learn-note-text {
+	color: var(--text-normal);
+}
+
+.lang-learn-note-collapsed {
+	display: none;
+}
+
+.lang-learn-note-example {
+	margin-bottom: 6px;
+}
+
+.lang-learn-note-sentence {
+	font-style: italic;
+	color: var(--text-accent);
+	margin-bottom: 2px;
+}
+
+.lang-learn-note-analysis {
+	color: var(--text-muted);
+	font-size: 12px;
+}
+
+.lang-learn-note-footer {
+	display: flex;
+	gap: 6px;
+	padding: 8px 14px;
+	border-top: 1px solid var(--background-modifier-border);
+	flex-shrink: 0;
+}

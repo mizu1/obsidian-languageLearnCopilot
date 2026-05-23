@@ -1,0 +1,36 @@
+{
+  "name": "obsidian-language-learn",
+  "version": "1.0.0",
+  "description": "Obsidian plugin for structured language learning with AI-powered word analysis, relation graphs, and context-aware hover tooltips.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "lint": "tsc -noEmit -skipLibCheck"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "language-learning",
+    "vocabulary",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/language": "^6.12.3",
+    "@codemirror/state": "^6.6.0",
+    "@codemirror/view": "^6.43.0",
+    "@types/node": "^20.11.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.20.0",
+    "obsidian": "^1.4.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.1.46",
+    "@langchain/deepseek": "^1.0.25",
+    "@langchain/google-genai": "^2.1.31",
+    "@langchain/openai": "^1.4.5"
+  }
+}

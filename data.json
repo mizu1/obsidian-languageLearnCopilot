@@ -1,0 +1,234 @@
+{
+  "provider": "deepseek",
+  "apiEndpoint": "https://api.deepseek.com",
+  "apiKey": "sk-9658345153ec4dfb9473967e8fc3f0c7",
+  "model": "deepseek-chat",
+  "nativeLanguage": "zh-CN",
+  "targetLanguage": "en",
+  "wordNotesFolder": "_word_notes",
+  "phraseNotesFolder": "_phrase_notes",
+  "hoverEnabled": true,
+  "hoverFields": [
+    "meaning",
+    "etymology",
+    "example"
+  ],
+  "hoverMaxWidth": 400,
+  "thinkingMode": false,
+  "phraseMaxWords": 2,
+  "contextMaxLength": 600,
+  "autoGenerateRelations": false,
+  "refreshOnStartup": false,
+  "relationFlags": {
+    "essentially": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "intelligent": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "analyzing": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "behaviors": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "presented": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "sociology": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "unchanged": {
+      "synonym": 1,
+      "antonym": 1,
+      "cognate": 1
+    },
+    "unvarying": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "articles": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "chapters": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "obsidian": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "paradigm": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "relevant": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "immobile": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "shifting": {
+      "synonym": 1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "extract": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "results": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "concept": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "whether": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "novelty": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "static": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "topic": {
+      "synonym": 0,
+      "antonym": 0,
+      "cognate": 0
+    },
+    "adapt": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "unchanging": {
+      "synonym": 1,
+      "antonym": 1,
+      "cognate": 1
+    },
+    "blooms": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "change": {
+      "synonym": 1,
+      "antonym": 1,
+      "cognate": 1
+    },
+    "変容": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": 1
+    },
+    "変化": {
+      "synonym": 1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "生まれる": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "変化する": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": 1
+    },
+    "学习": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "convertible": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "alterable": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "permanent": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "doubtful": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "becoming": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "asleep": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "仓库": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "准备": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "真理": {
+      "synonym": -1,
+      "antonym": -1,
+      "cognate": -1
+    },
+    "regression": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    },
+    "stability": {
+      "synonym": -1,
+      "antonym": 1,
+      "cognate": -1
+    }
+  }
+}

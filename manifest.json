@@ -1,0 +1,10 @@
+{
+  "id": "language-learn",
+  "name": "Language Learn",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "AI-powered language learning with word analysis, relation graphs, hover tooltips, and structured note-taking.",
+  "author": "",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
